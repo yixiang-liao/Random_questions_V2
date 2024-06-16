@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>機器學習期末 - 隨機出題系統</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>機器學習期末 - 隨機出題系統</h1>
+        <label for="numQuestions">選擇出題數量:</label>
+        <input type="number" id="numQuestions" min="1" max="10" value="5">
+        <button id="startQuiz">開始測驗</button>
+        <button id="browseQuiz">閱覽</button>
+        <div id="quizContainer" style="display:none;">
+            <form id="quizForm">
+                <div id="questionContainer"></div>
+                <div class="navigation-buttons">
+                    <button type="button" id="prevQuestion">上一題</button>
+                    <button type="button" id="nextQuestion">下一題</button>
+                </div>
+            </form>
+            <button id="submitQuiz">提交答案</button>
+        </div>
+        <div id="overviewContainer" style="display:none;">
+            <h2>所有題目</h2>
+            <div id="questionsOverview"></div>
+            <div class="navigation-buttons">
+                <button id="prevPage" style="display:none;">上一頁</button>
+                <button id="nextPage" style="display:none;">下一頁</button>
+            </div>
+            <button id="reviewQuiz">回到測驗</button>
+        </div>
+        <div id="resultContainer" style="display:none;">
+            <h2>結果</h2>
+            <p id="correctAnswers"></p>
+            <div id="incorrectAnswers"></div>
+            <div class="navigation-buttons">
+                <button id="prevResultPage" style="display:none;">上一頁</button>
+                <button id="nextResultPage" style="display:none;">下一頁</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 18px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+label, input[type="number"], button, form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+form {
+    text-align: left;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+form input[type="radio"] {
+    margin-right: 15px;
+}
+
+#prevQuestion, #nextQuestion, #reviewQuiz {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* 使按鈕顯示為行內塊，便於對齊 */
+    margin: 5px;
+}
+
+#prevQuestion:hover, #nextQuestion:hover, #reviewQuiz:hover {
+    background-color: #0056b3;
+}
+
+#incorrectAnswers {
+    text-align: left;
+    color: #d9534f;
+    margin-left: 20px;
+}
+
+.unanswered {
+    font-weight: bold;
+    color: #333;
+}
+
+#quizContainer, #overviewContainer, #resultContainer {
+    display: none;
+}
+
+.question-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.question-item:last-child {
+    border-bottom: none;
+}
+
+.question-item h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.question-item label {
+    display: block;
+    margin: 5px 0;
+}
+
+.question-item input[type="radio"] {
+    margin-right: 10px;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
